@@ -45,8 +45,6 @@ window.onload = function(){
         return range*.04;
     }
     if (range >= 50 && range < 75) {
-        return range*.06;
-    }
     if (range >= 75 && range <= 100) {
         return range*.08
     }
