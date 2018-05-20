@@ -1,14 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.block{
-	width: 100px;
-	height: 100px;
-	background: green;
-	position: absolute;
-	top: 200px;
-	left: 200px;
-}
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+	
+	.block{ 
+	    float: left;
+	    width: 200px;
+	}
+	
+	.inputs-wrap{
+	    float: left;
+	    width: 200px;
+	    margin: 20px 40px;
+	}
+	
+	.range{
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	
+	.number{
+	    width: 100%;
+	}
+	
+	.block{
+		position: relative;
+		width: 50px;
+		height: 108px;
+		border: 1px solid black;
+		margin: 20px;
+	}
+	
+	.green {
+		position: absolute;
+		width: 100%;
+		background-color: green;
+		bottom: 0;
+	}
+	.red {
+		position: absolute;
+		background-color: red;
+		width: 100%;
+	
+	
+	}
+	
