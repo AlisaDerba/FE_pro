@@ -1,53 +1,53 @@
+// window.onload = function(){
+    
+// var block = document.querySelector('.block');
+// var x;
+// var y;
+
+// block.addEventListener('mousedown', startAction);
+
+// function startAction(event){
+//    x = event.offsetX;
+//    y = event.offsetY;
+//   document.addEventListener('mousemove', changePosition);
+// }
+
+//   function changePosition(event){
+
+//     block.style.left = event.pageX - x + 'px'; 
+//     block.style.top = event.pageY - y + 'px';
+ 
+// } 
+    
+// document.addEventListener('mouseup', stopAction);
+
+//     function stopAction(){
+//         document.removeEventListener('mousemove', changePosition);
+//     }
+
+// }
+
 window.onload = function(){
+
+    var block = document.querySelector('block');
+    var step = (20 + 'px');
+    var h = (100 + 'px');
+
+    block.addEventListener('keydown', move);
+
+    var move = document.body.onkeydown = function() {
+        var e = event.keyCode
     
-    //--------Accessing_elements---------
-    
-    var range = document.querySelector('.range');
-	var number = document.querySelector('.number');
-    var green = document.querySelector('.green');
-	var red = document.querySelector('.red');
-    
-    //--------Putting_events---------
-
-    number.addEventListener('click', putNumber);
-    range.addEventListener('mousemove', putRange);
-
-    //--------Range_function---------
-
-	function putRange(){
-	number.value = range.value;
-
-    green.style.height = range.value + 'px';
-    
-    red.style.bottom = green.style.height;
-    red.style.height = comission(range.value) + 'px';
-    
-	}
-
-     //--------Number_function---------
-
-	function putNumber() {
-        range.value = number.value;
+            if (e == 40) { //down function
+                block.style.top = (parseInt(block.style.top)) + step;
+            } else if (e == 37) { //left function
+                block.style.left = (parseInt(block.style.left)) - step;
+            } else if (e == 39) { //right function
+                block.style.left = (parseInt(block.style.left)) + step;
+            } else if (e == 38) { //up function
+                block.style.top = (parseInt(block.style.top)) - step;
+            }
         
-        green.style.height = number.value + 'px';
-        
-        red.style.bottom = green.style.height;
-        red.style.height = comission(range.value) + 'px';
-	}
-    
-    //--------Comission_function---------
+        }
 
-	function comission (range){
-    if (range < 20) {
-        return range*.02;
-    }
-    if (range >= 20 && range < 50) {
-        return range*.04;
-    }
-    if (range >= 50 && range < 75) {
-    if (range >= 75 && range <= 100) {
-        return range*.08
-    }
-
-}
 }
