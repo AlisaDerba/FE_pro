@@ -8,3 +8,11 @@
 	border-radius: 5%;
 }
 
+.sit{
+	width: 115px;
+	height: 60px;
+	transition: .2s;
+}
+
+
+
