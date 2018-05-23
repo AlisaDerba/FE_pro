@@ -1,13 +1,17 @@
-function jumping() {
+function jumping(){
     jump(block);
 }
 
-function sitting() {
+function sitting(){
     sit(block);
 }
 
-function changingColor() {
+function changingColor(){
     changeColor(block);
+}
+
+function removing(){
+    remove(block);
 }
 
 window.onload = function(){
@@ -58,6 +62,23 @@ window.onload = function(){
 
     window.changeColor = changeColor;
 
+//-------Remove----------
+
+
+    function remove(block) {
+        
+        block.classList.toggle ('remove');
+        
+        if(menu.childNodes[3].textContent == 'Remove'){
+           menu.childNodes[3].textContent = 'Show Again';
+        }else {
+            menu.childNodes[3].textContent = 'Remove';
+        }
+        
+    }
+
+    window.remove = remove;
+
 //----------Context-menu-----------------
 
 	var menu = document.querySelector('.menu'); 
@@ -76,6 +97,10 @@ window.onload = function(){
             {
                 title: "Change color",
                 handler: 'changingColor'
+            },
+            {
+                title: "Remove",
+                handler: 'removing'
             }
         ]
     }

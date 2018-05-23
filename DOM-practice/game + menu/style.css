@@ -21,6 +21,10 @@ body {
 	height: 60px;
 }
 
+.remove{
+	visibility: hidden;
+}
+
 .menu{
     position: fixed;
     list-style: none;
