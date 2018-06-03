@@ -76,7 +76,6 @@ window.onload = function () {
         localStorage.setItem("goods", goodsInStorage);
         goodsInStorage = JSON.parse(localStorage.goods);
 
-
         renderStorage();
     }
 
