@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.products {
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5 {
+    width: 15%;
+    height: 200px; 
+    margin: 5px;
+    border: 3px solid black; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product1{
+background: gray;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+}
+
+.product2{
+    background: green;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product3{
+    background:blueviolet;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product4{
+    background:lightcoral;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product5{
+    background: khaki;
+    text-align: center;
+    font-size: 18px;
+    
+    font-weight: bold;
+}
+
+.cart {
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    min-width: 250px;
+    min-height: 220px;
+    overflow-y: scroll;
+    top: 100px;
+    right: 440px;   
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.remove_all {
+    position: absolute;
+    bottom: 5px;
+    right: 10%;
+    width: 40%;
+    background: salmon;
+        
+}
+
+.add_button, .remove_button {
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 60%;
+    
+}
+
+
