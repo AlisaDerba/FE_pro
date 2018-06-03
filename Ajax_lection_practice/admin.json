@@ -1,0 +1,31 @@
+{
+    "menu": [
+        {
+            "title":"Home"
+        },
+
+        {
+            "title": "Settings"
+        },
+        {
+            "title":"Goods",
+            "submenu":[
+                {
+                    "title": "TV"
+                },
+                {
+                    "title":"Auto"
+                }
+            ]
+        },
+        {
+            "title":"Acconts"
+        },
+
+        {
+            "title": "Members"
+        }
+
+
+    ]
+}
