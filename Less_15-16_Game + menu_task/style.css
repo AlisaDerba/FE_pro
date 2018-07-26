@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+}
+.block {
+	position: fixed;
+	background-color: lightsalmon;
+	width: 100px;
+	height: 100px;
+	left: 45%;
+	top: 45%;
+	border-radius: 5px;
+	transition: all .2s;
+}
+
+.sit {
+	width: 115px;
+	height: 60px;
+}
+
+.remove{
+	visibility: hidden;
+}
+
+.menu{
+    position: fixed;
+    list-style: none;
+	visibility: hidden;
+	width: 300px;
+}
+
+.show{
+    visibility: visible;
+}
+
+
+.inneritem{
+height: 25px;
+border: 1px solid black;
+border-radius: 3px;
+padding: 10px;
+cursor: pointer;
+transition: .3s;
+font-style: monospace;
+font-size: 25px;
+text-align: center;
+}
+
+.inneritem:hover{
+    background-color: lightgray;
+}
